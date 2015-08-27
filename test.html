@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Toy Problems Testing Suite</title>
+
+    <!-- testing frameworks -->
+    <link rel="stylesheet" href="lib/mocha.css">
+
+    <script src="./lib/mocha.js"></script>
+    <script src="./lib/chai.js"></script>
+    <script src="./linked_list.js"></script>
+    <script src="./linked_list_test.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script>
+      mocha.setup('bdd');
+      window.assert = chai.assert;
+      mocha.run();
+    </script>
+  </body>
+
+</html>
+
